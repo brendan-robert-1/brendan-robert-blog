@@ -1,21 +1,86 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <!-- Head content similar to index.html -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-</head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <!-- Remixicon Icon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Remixicon Icon -->
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Main CSS -->
+        <link href="assets/css/main.css" rel="stylesheet">
+      </head>
+
 <body>
     <!-- Back Button -->
-    <div class="back-button-container">
-        <a href="index.html#blog-link" class="back-button">Back</a>
-    </div>
-
-    <!-- Blog Content -->
-    <div class="blog-post-content">
-        <h1>Sample Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-
+      <!-- header -->
+      <header class="ds-secondary-header">
+        <div class="container">
+            <div class="ds-logo">
+              <a href="index.html#blog-link">< Back</a>
+            </div>
+        </div>
+      </header>
+    <section class="ds-secondary-project-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                    <h2>SEPTA: Mobile Ticketing </h2>
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                 
+                  <figure>
+                    <img src="assets/images/projects-1.jpg" class="secondary-page-image">
+                  </figure>
+                 
+                </div>
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                  <p>SEPTA (South Eastern Pennsylvania Transit Authority) is my local transit authority. I helped develop and deploy a "Mobile Ticketing" initiative. Previously
+                    the only way to pay a fare is with cash or a SEPTA "KeyCard" there were no fully virtual/mobile options. I was the lead back-end software engineer responsible for connecting SEPTA's
+                    existing functionality into a third pary mobile ticketing API. Security and performance were huge concerns.</p> 
+              
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="ds-secondary-project-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                  <figure>
+                    <img src="assets/images/qr-code-scanner.jpg" class="secondary-page-image">
+                  </figure>
+                 
+                </div>
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                    <p>Additionally I worked on encoding and decoding QR code functionality. This would allow bus and rail workers to use equipment to scan QR codes on users phones. This information was decoded
+                        and routed through SEPTA's existing functionality as well as incorporating calls to the third party mobile ticketing api.
+                    </p>
+                    <p>Key languages and tools: AWS (Lambda, SNS, EC2, S3), PHP, Linux, REST</p>  
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="ds-email-section">
+        <div class="container">
+           <h2>I'm available for work</h2>
+           <a href="mailto:brendan.robert50point@gmail.com">brendan.robert50point@gmail.com</a>
+        </div>
+     </section>
     <!-- Rest of the page similar to index.html -->
 </body>
 </html>

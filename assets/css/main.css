@@ -50,6 +50,7 @@ svg,img { max-width: 100%; height: auto; }
   1. >>> Headr Style
 ----------------------------------------------------------------*/
 .ds-header{ padding-top:2.5rem; padding-bottom: 7.8125rem; position: relative;  }
+.ds-secondary-header{padding-top:1rem; padding-bottom: 1rem; position: relative;  }
 .ds-logo a{ display: inline-block; background-color: #CBFE00; font-weight: 600; font-size: 1.125rem; padding: 0  0.4375rem; color: #000}
 .ds-logo a:hover,.ds-logo a:focus{color: #000}
 /*-----------------------------------------------------------------
@@ -73,6 +74,15 @@ svg,img { max-width: 100%; height: auto; }
 .ds-resume-section{ background-color: #000; padding: 7.5rem 0 }
 .ds-resume-section h2{ font-size: 2.5rem; line-height: 3.375rem; width: 100%;max-width: 80%;margin: 0 }
 .ds-resume-section p{ color:#9C9C9C; font-size: 1rem; line-height: 1.875rem }
+
+.ds-tools{ padding: 7.5rem 0 }
+.ds-tools h2{ font-size: 2.5rem; line-height: 3.375rem; width: 100%;max-width: 80%;margin: 0 }
+.ds-tools p{ color:#9C9C9C; font-size: 1rem; line-height: 1.875rem }
+
+.ds-secondary-project-section{ background-color: #000; padding: 3.0rem 0 }
+.ds-secondary-project-section h2{ font-size: 2.5rem; line-height: 3.375rem; width: 100%;max-width: 80%;margin: 0 }
+.ds-secondary-project-section p{ color:#9C9C9C; font-size: 1rem; line-height: 1.875rem }
+
 .ds-blog-posts{ display:none; background-color: #1b1b1b; padding: 7.5rem 0 }
 .ds-blog-posts a { color: #FFF; padding: 7.5rem 0 }
 .ds-blog-posts a:hover { color: #606bff; padding: 7.5rem 0 }
@@ -80,11 +90,14 @@ svg,img { max-width: 100%; height: auto; }
 .ds-blog-posts h2 span{ display: block; font-family: 'Questrial', sans-serif; text-transform: uppercase; color: #CBFE00; font-weight: 600; letter-spacing: 3px; font-size: 0.75rem; margin-bottom: 0.625rem}
 .ds-blog-posts h3{ font-size: 1.5rem; line-height: 3.375rem; width: 100%;max-width: 80%;margin: 0 }
 .ds-blog-posts h3 span{ display: block; font-family: 'Questrial', sans-serif; text-transform: uppercase; color: #CBFE00; font-weight: 600; letter-spacing: 3px; font-size: 0.75rem; margin-bottom: 0.625rem}
-
 .ds-blog-posts p{ color:#9C9C9C; font-size: 1rem; line-height: 1.875rem }
 .ds-download-button{ display: inline-block; color: #CBFE00; border: 1px solid #CBFE00; letter-spacing: 3px; text-transform: uppercase; font-size: 0.75rem; padding:0.875rem 1.25rem; margin-top: 30px  }
 .ds-download-button i{ font-size:1.125rem; vertical-align: middle;  }
 .ds-download-button:hover{ color: #000; background-color:#CBFE00  }
+.ds-about-me {color:#CBFE00;}
+.about-me-image{ max-width: 400px; max-height: 400px;}
+.about-me-image-container {margin-bottom:60px;}
+.secondary-page-text {font-size:1.5rem; color:#FFF;}
 /*-----------------------------------------------------------------
   4. >>> Projects Style
 ----------------------------------------------------------------*/
@@ -120,6 +133,11 @@ svg,img { max-width: 100%; height: auto; }
 .ds-email-section h2{ font-size: 3.75rem;color: #000; margin-bottom: 1.875rem }
 .ds-email-section a{ color: #000; font-size:1.25rem; font-weight: 500; text-decoration: underline;  }
 .ds-email-section a:hover{ color: #000; text-decoration: none; }
+
+.ds-secondary-title{padding: 7.5rem 0; background-color: #000000; text-align: center;}
+.ds-secondary-title h2{ font-size: 3.75rem;color: #000;}
+.ds-secondary-title a{ color: #000; font-size:1.25rem; font-weight: 500; text-decoration: underline;  }
+.ds-secondary-title a:hover{ color: #000; text-decoration: none; }
 /*-----------------------------------------------------------------
   7. >>> Footer Style
 ----------------------------------------------------------------*/
@@ -131,6 +149,7 @@ svg,img { max-width: 100%; height: auto; }
 -------------------------------------------------------------------------------*/
 @media (max-width: 767px) {
 	.ds-header {padding-top: 2.5rem;padding-bottom:2.5rem;}
+	.ds-secondary-header {padding-top: 2.5rem;padding-bottom:2.5rem;}
 	.ds-banner-hed {font-size: 2.3125rem;line-height: 3rem;}
 	.ds-banner .container{ position: relative; padding-bottom: 90px }
 	.ds-social{ position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
@@ -154,6 +173,7 @@ svg,img { max-width: 100%; height: auto; }
 
 @media (min-width: 768px) and (max-width: 991px) {
 .ds-header{padding-bottom: 3.8125rem;}
+.ds-secondary-header{padding-bottom: 3.8125rem;}
 .ds-banner-hed{font-size: 3.3125rem;line-height: 4rem;}
 .ds-banner figure{ margin-right: 1.875rem }
 .ds-blog-postssection h2{ max-width: 60% }
@@ -165,32 +185,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-banner figure{ margin-right: 1.875rem }
 
 }
-
-/* Additional CSS for blog-post.html */
-.back-button-container {
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.back-button {
-    background-color: #CBFE00; /* Matching your theme */
-    color: #000;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.blog-post-content {
-    margin-top: 50px; /* Adjust as needed */
-    text-align: center;
-}
-
-.blog-post-content h1 {
-    color: #FFF; /* Adjust color as needed */
-}
-
-.blog-post-content p {
-    color: #9C9C9C; /* Adjust color as needed */
+.secondary-page-image {
+	max-width: 400px;
+	max-height: 400px;
 }

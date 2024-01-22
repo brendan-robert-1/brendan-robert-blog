@@ -1,21 +1,79 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <!-- Head content similar to index.html -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-</head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <!-- Remixicon Icon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Remixicon Icon -->
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Main CSS -->
+        <link href="assets/css/main.css" rel="stylesheet">
+      </head>
+
 <body>
     <!-- Back Button -->
-    <div class="back-button-container">
-        <a href="index.html#blog-link" class="back-button">Back</a>
-    </div>
-
-    <!-- Blog Content -->
-    <div class="blog-post-content">
-        <h1>Sample Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-
+      <!-- header -->
+      <header class="ds-secondary-header">
+        <div class="container">
+            <div class="ds-logo">
+              <a href="index.html#blog-link">< Back</a>
+            </div>
+        </div>
+      </header>
+    <section class="ds-secondary-project-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                    <h2>Evolve IP: Automated Invoicing and Billing </h2>
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                 
+                  <figure>
+                    <img src="assets/images/projects-3.png" class="secondary-page-image">
+                  </figure>
+                 
+                </div>
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                  <p>
+                    Evolve IP has a large B2B customer base with custom contracts regarding bundles, seats packages, and discounts. Becaue of this generating monthly Invoices for each
+                    customer was very error prone and included many manual processes. This included manually checking database values to make sure the stated provisoned "bundles" matched up
+                    with the underlying components of the bundle 
+                  </p> 
+                </hr>
+                <p>I wrote primarily Java Spring CronJobs that would run each night to reconcile any differences between provisioned services and custom bundles. This involved normalizing the SQL data model
+                    with regards to customer bundles, executing external rest calls to check third party service usages, and adjusting billing tables. Lastly, reports were generated and
+                distributed to the sales, invoicing, and billing teams alerting them of any large changes as a result of nightly reconcilliation.</p>
+                </hr>
+                <p>This completly automated my Billing Analyst job at the time as well as two others with my same title. It also allowed us to greatly reduce the number of "credit disputes" that our customers
+                    would submit for our previous inaccuracies with our old billing system. It also greatly improved the customer relationship.
+                </p>
+            </hr>
+            <p>Main tools used: Java, Spring, Cron, Linux, SQL, REST</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="ds-email-section">
+        <div class="container">
+           <h2>I'm available for work</h2>
+           <a href="mailto:brendan.robert50point@gmail.com">brendan.robert50point@gmail.com</a>
+        </div>
+     </section>
     <!-- Rest of the page similar to index.html -->
 </body>
 </html>
