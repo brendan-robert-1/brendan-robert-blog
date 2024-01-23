@@ -83,7 +83,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-secondary-project-section h2{ font-size: 2.5rem; line-height: 3.375rem; width: 100%;max-width: 80%;margin: 0 }
 .ds-secondary-project-section p{ color:#9C9C9C; font-size: 1rem; line-height: 1.875rem }
 
-.ds-blog-posts{ display:none; background-color: #1b1b1b; padding: 7.5rem 0 }
+.ds-blog-posts{  background-color: #1b1b1b; padding: 7.5rem 0 }
 .ds-blog-posts a { color: #FFF; padding: 7.5rem 0 }
 .ds-blog-posts a:hover { color: #606bff; padding: 7.5rem 0 }
 .ds-blog-posts h2{ font-size: 2.5rem; line-height: 3.375rem; width: 100%;max-width: 80%;margin: 0; margin-bottom: 2.5rem }

@@ -21,18 +21,91 @@
         <!-- Main CSS -->
         <link href="assets/css/main.css" rel="stylesheet">
       </head>
+
 <body>
     <!-- Back Button -->
-    <div class="back-button-container">
-        <a href="index.html#blog-link" class="back-button">Back</a>
-    </div>
+      <!-- header -->
+      <header class="ds-secondary-header">
+        <div class="container">
+            <div class="ds-logo">
+              <a href="index.html#blog-link">< Back</a>
+            </div>
+        </div>
+      </header>
+    <section class="ds-secondary-project-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                    <h2>The Real Value of Software Testing </h2>
+                </div>
+            
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6">
+                  <p>
 
-    <!-- Blog Content -->
-    <div class="blog-post-content">
-        <h1>Sample Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+In the ever-evolving world of software development, there are practices and concepts that often remain misunderstood. From the intricacies of "private" variables to the buzz surrounding agile methodologies, one concept that deserves our attention is Software Testing.
+</p>
+</hr>
+</hr>
+<h3>The Misunderstood Practices:</h3>
+</hr>
 
+<p>Software testing is typically categorized into various types, including unit testing, integration testing, and end-to-end testing. While many understand testing as a way to ensure software functions as expected, its true value goes beyond that. In this article, we'll delve into the multifaceted world of software testing, exploring its purpose, its significance for future-proofing your code, and a real-world example that highlights the importance of unit testing.
+</p>
+</hr>
+<h3>Types of Software Testing:</h3>
+</hr>
+</hr>
+<p>Software testing can be split into two or three main categories. "Unit" testing verifies the validity of small independent pieces of code, such as individual methods or classes, with everything else mocked out. "Integration" testing involves testing multiple independent pieces of code together, often involving method calls down through a stack of dependency-injected class instances. While integration testing usually mocks external dependencies like databases or external APIs, "End-to-End" testing is typically combined with integration testing but involves as little mocking as possible. It is not included in build pipelines to prevent breaking builds due to external factors like a database being down.
+</p>
+</hr>
+</hr>
+<h3>The Real Value of Unit Testing:
+</h3>
+</hr>
+</hr>
+<p>Many people assume that the purpose of software testing is merely to verify that the software performs as expected. While this is an important aspect, it's not the whole picture. Let's consider a scenario where you're tasked with writing a piece of business logic that behaves differently based on the month of the year. In the first half of the year, it makes an API call to one service, and in the second half, it calls a separate API. You may write unit tests to ensure the correct APIs are called based on the mocked month. You show these tests to your tech lead as proof that your code does what it says it does. Is this the end of the story?
+</p>
+</hr>
+</hr>
+<h3>The Importance Beyond Verification:
+</h3>
+</hr>
+</hr>
+<p>So, what's the crucial benefit of unit testing? It's about future changes. Allow me to share a brief story from a project I worked on. I joined a team that was tackling a legacy codebase approaching 1 million lines of code, and it had ZERO unit tests. Surprisingly, the code worked perfectly, doing exactly what it was supposed to do, and the business was thriving. Writing unit tests would have delayed the software and caused missed deadlines, so why bother?
+</p>
+</hr>
+</hr>
+<p>As part of my initial contribution to this codebase, I fixed a simple bug related to date serialization in an endpoint. I deployed the fix but was asked to immediately revert it. Why? It turns out there were other processes that relied on the bug being present, while others needed the "fixed" date format. With ample unit testing, my change would have broken the methods that relied on the bug, revealing the issue at build time, not deploy time.
+</p>
+</hr>
+</hr>
+<h3>Finding the Right Balance:
+</h3>
+</hr>
+</hr>
+<p>Certainly, there are diminishing returns for time spent on unit testing. I've been on teams that aimed for 100% unit test coverage, leading us to test Plain Old Java Objects (POJOs) and getters/setters, which isn't ideal. A better metric to consider is how comfortable new developers feel deploying simple changes to production without breaking existing functionality.
+</p>
+</hr>
+</hr>
+<h3>Conclusion:</h3>
+</hr>
+</hr>
+<p>In the world of software development, software testing isn't just about ensuring that your code functions correctly today. It's about future-proofing your codebase and avoiding costly surprises down the road. While there's a balance to strike in testing efforts, finding that sweet spot can make all the difference in the stability and maintainability of your software.
+</p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="ds-email-section">
+        <div class="container">
+           <h2>I'm available for work</h2>
+           <a href="mailto:brendan.robert50point@gmail.com">brendan.robert50point@gmail.com</a>
+        </div>
+     </section>
     <!-- Rest of the page similar to index.html -->
 </body>
 </html>
